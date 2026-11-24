@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover | NIKE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+
+    <header class="navbar dashboard-navbar">
+        <a href="dashboard.html" class="logo home-logo" aria-label="NIKE Home">
+            <span class="home-icon-box">
+                <svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 10.5L12 3l9 7.5"></path>
+                    <path d="M5.5 9.5V21h13V9.5"></path>
+                    <path d="M9 21v-7h6v7"></path>
+                </svg>
+            </span>
+            <span>NIKE</span>
+        </a>
+
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#men">MEN</a>
+            <a href="#women">WOMEN</a>
+            <a href="#kids">KIDS</a>
+            <a href="#featured">COLLECTION</a>
+        </nav>
+
+        <div class="dashboard-actions">
+            <span id="dashboardUser">WELCOME</span>
+
+            <a href="cart.html" class="cart-link">
+                <svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 3h2l2.5 12h10.8l2.2-8H6"></path>
+                    <circle cx="9" cy="19" r="1"></circle>
+                    <circle cx="18" cy="19" r="1"></circle>
+                </svg>
+                <span id="cartCount">0</span>
+            </a>
+
+            <button type="button" id="logoutButton">LOG OUT</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="dashboard-hero" id="home">
+            <div class="dashboard-hero-content">
+                <p class="dashboard-eyebrow">THE NEW COLLECTION</p>
+                <h1>MADE TO<br>MOVE.</h1>
+                <p class="dashboard-description">
+                    Discover styles that bring comfort, confidence,
+                    and performance into every step.
+                </p>
+                <a href="#featured" class="dashboard-shop-btn">
+                    EXPLORE COLLECTION <span>→</span>
+                </a>
+            </div>
+
+            <div class="dashboard-hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1400&q=90"
+                    alt="Featured Nike-style sneaker">
+            </div>
+
+            <span class="dashboard-background-text">NIKE</span>
+            <span class="dashboard-hero-number">01 / 03</span>
+        </section>
+
+        <!-- INTRODUCTION -->
+        <section class="dashboard-intro" id="featured">
+            <div>
+                <p class="dashboard-eyebrow">CURATED FOR YOU</p>
+                <h2>Find Your<br>Next Favorite.</h2>
+            </div>
+            <p>
+                From everyday essentials to statement pieces,
+                find the pair that matches your style.
+            </p>
+        </section>
+
+        <!-- FEATURED PRODUCTS -->
+        <section class="dashboard-products">
+            <article class="dashboard-product-card">
+                <div class="dashboard-product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=85"
+                        alt="Red athletic sneaker">
+                </div>
+
+                <div class="dashboard-product-info">
+                    <div>
+                        <h3>Air Max Style</h3>
+                        <p>Men's Shoes</p>
+                    </div>
+                    <span>₱5,495</span>
+                </div>
+
+                <button class="add-to-cart-btn"
+                    data-id="air-max-style"
+                    data-name="Air Max Style"
+                    data-price="5495"
+                    data-image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=85">
+                    ADD TO CART
+                </button>
+            </article>
+
+            <article class="dashboard-product-card">
+                <div class="dashboard-product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=85"
+                        alt="Classic white sneaker">
+                </div>
+
+                <div class="dashboard-product-info">
+                    <div>
+                        <h3>Everyday Classic</h3>
+                        <p>Women's Shoes</p>
+                    </div>
+                    <span>₱4,895</span>
+                </div>
+
+                <button class="add-to-cart-btn"
+                    data-id="everyday-classic"
+                    data-name="Everyday Classic"
+                    data-price="4895"
+                    data-image="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=85">
+                    ADD TO CART
+                </button>
+            </article>
+
+            <article class="dashboard-product-card">
+                <div class="dashboard-product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=85"
+                        alt="Modern lifestyle sneaker">
+                </div>
+
+                <div class="dashboard-product-info">
+                    <div>
+                        <h3>Street Essential</h3>
+                        <p>Unisex Shoes</p>
+                    </div>
+                    <span>₱4,295</span>
+                </div>
+
+                <button class="add-to-cart-btn"
+                    data-id="street-essential"
+                    data-name="Street Essential"
+                    data-price="4295"
+                    data-image="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=85">
+                    ADD TO CART
+                </button>
+            </article>
+        </section>
+
+        <!-- CATEGORY SECTION -->
+        <section class="dashboard-categories">
+            <div class="dashboard-category-heading">
+                <p class="dashboard-eyebrow">EXPLORE YOUR STYLE</p>
+                <h2>Shop By Category</h2>
+            </div>
+
+            <div class="dashboard-category-grid">
+                <a href="#men" class="dashboard-category men-category" id="men">
+                    <img
+                        src="https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=900&q=85"
+                        alt="Men's sneakers">
+                    <span>MEN <b>→</b></span>
+                </a>
+
+                <a href="#women" class="dashboard-category women-category" id="women">
+                    <img
+                        src="https://i.pinimg.com/1200x/9a/fe/37/9afe37d30322ae3a2a5777c925c95399.jpg"
+                        alt="Women's Nike Run Defy sneakers">
+                    <span>WOMEN <b>→</b></span>
+                </a>
+
+                <a href="#kids" class="dashboard-category kids-category" id="kids">
+                    <img
+                        src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=900&q=85"
+                        alt="Kids' sneakers">
+                    <span>KIDS <b>→</b></span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="dashboard-footer">
+        <a href="dashboard.html" class="dashboard-footer-logo">NIKE</a>
+        <p>JUST DO IT.</p>
+        <span>© 2026 NIKE. ALL RIGHTS RESERVED.</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

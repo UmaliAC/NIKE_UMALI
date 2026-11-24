@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification | NIKE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo home-logo" aria-label="NIKE Home">
+        <span class="home-icon-box">
+            <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 10.5L12 3l9 7.5"></path>
+                <path d="M5.5 9.5V21h13V9.5"></path>
+                <path d="M9 21v-7h6v7"></path>
+            </svg>
+        </span>
+        <span>NIKE</span>
+    </a>
+
+    <nav>
+        <a href="#">MEN</a>
+        <a href="#">WOMEN</a>
+        <a href="#">KIDS</a>
+        <a href="#">CUSTOMIZE</a>
+        <a href="#">PROMOTIONS</a>
+    </nav>
+</header>
+
+<main class="auth-container">
+
+    <section class="image-section">
+        <div class="image-text">
+            <h1>CHECK<br>YOUR EMAIL</h1>
+            <p>WE'VE SENT A VERIFICATION CODE<br>
+                TO YOUR EMAIL ADDRESS.</p>
+        </div>
+
+        <img
+            src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=1000&q=85"
+            alt="Sneaker"
+        >
+
+        <small>JUST DO IT.</small>
+    </section>
+
+    <section class="form-section">
+        <div class="auth-form verification-card">
+
+            <div class="email-icon">✉</div>
+
+            <h2>Verify Your Email</h2>
+
+            <p class="verification-text">
+                We've sent a six-digit verification code
+                to your email. Enter the code below to
+                activate your account.
+            </p>
+
+            <p id="verificationEmail" class="email-address"></p>
+
+            <form id="verificationForm">
+
+    <div class="otp-inputs">
+        <input type="text" maxlength="1" inputmode="numeric" class="otp-box">
+        <input type="text" maxlength="1" inputmode="numeric" class="otp-box">
+        <input type="text" maxlength="1" inputmode="numeric" class="otp-box">
+        <input type="text" maxlength="1" inputmode="numeric" class="otp-box">
+        <input type="text" maxlength="1" inputmode="numeric" class="otp-box">
+        <input type="text" maxlength="1" inputmode="numeric" class="otp-box">
+    </div>
+
+    <input type="hidden" id="verificationCode">
+
+    <button type="submit" class="main-btn">
+        Verify Email
+    </button>
+
+</form>
+
+            <a href="login.html" class="main-btn back-btn">
+                Back to Login
+            </a>
+
+            <button type="button" id="resendEmail"
+                class="resend-btn">
+                Resend Email
+            </button>
+
+            <p id="verificationMessage" class="message"></p>
+
+        </div>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

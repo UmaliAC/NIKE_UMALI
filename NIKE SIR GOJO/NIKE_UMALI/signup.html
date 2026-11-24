@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | NIKE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo home-logo" aria-label="NIKE Home">
+        <span class="home-icon-box">
+            <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 10.5L12 3l9 7.5"></path>
+                <path d="M5.5 9.5V21h13V9.5"></path>
+                <path d="M9 21v-7h6v7"></path>
+            </svg>
+        </span>
+        <span>NIKE</span>
+    </a>
+
+</header>
+
+<main class="auth-container">
+
+    <section class="image-section">
+        <div class="image-text">
+            <h1>JOIN<br>THE NIKE<br>FAMILY</h1>
+            <p>CREATE AN ACCOUNT<br>FOR A BETTER EXPERIENCE</p>
+        </div>
+
+        >
+
+        <small>JUST DO IT.</small>
+    </section>
+
+    <section class="form-section">
+        <form class="auth-form" id="signupForm">
+
+            <h2>Sign Up</h2>
+            <p class="subtitle">
+                Create your account and get started.
+            </p>
+
+            <div class="input-group">
+                <span>♙</span>
+                <input type="text" id="fullName"
+                    placeholder="Full Name" required>
+            </div>
+
+            <div class="input-group">
+                <span>✉</span>
+                <input type="email" id="signupEmail"
+                    placeholder="Email Address" required>
+            </div>
+
+            <div class="input-group">
+                <span>♙</span>
+                <input type="password" id="signupPassword"
+                    placeholder="Password" minlength="6" required>
+                <button type="button" class="toggle-password"
+                    data-toggle="signupPassword">◉</button>
+            </div>
+
+            <div class="input-group">
+                <span>♙</span>
+                <input type="password" id="confirmPassword"
+                    placeholder="Confirm Password" required>
+                <button type="button" class="toggle-password"
+                    data-toggle="confirmPassword">◉</button>
+            </div>
+
+            <label class="terms">
+                <input type="checkbox" id="agreeTerms" required>
+                I agree to the Terms of Service and Privacy Policy.
+            </label>
+
+            <button type="submit" class="main-btn">
+                Create Account →
+            </button>
+
+            <p class="switch-page">
+                Already have an account?
+                <a href="login.html">Log In</a>
+            </p>
+
+            <p class="message" id="signupMessage"></p>
+
+        </form>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

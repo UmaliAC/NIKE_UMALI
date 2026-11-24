@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | NIKE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="cart-page">
+
+    <header class="navbar dashboard-navbar">
+        <a href="dashboard.html" class="logo home-logo">
+            <span class="home-icon-box">
+                <svg viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 10.5L12 3l9 7.5"></path>
+                    <path d="M5.5 9.5V21h13V9.5"></path>
+                    <path d="M9 21v-7h6v7"></path>
+                </svg>
+            </span>
+            <span>NIKE</span>
+        </a>
+
+        <a href="dashboard.html">CONTINUE SHOPPING</a>
+    </header>
+
+    <main class="cart-container">
+        <h1>YOUR SHOPPING CART</h1>
+
+        <div id="cartItems"></div>
+
+        <div id="emptyCart" style="display: none;">
+            <p>Your cart is currently empty.</p>
+            <a href="dashboard.html">CONTINUE SHOPPING</a>
+        </div>
+
+        <div id="cartSummary">
+            <h2>Total: <span id="cartTotal">₱0</span></h2>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
