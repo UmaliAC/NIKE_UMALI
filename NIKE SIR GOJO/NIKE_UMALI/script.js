@@ -42,7 +42,7 @@ if (signupForm) {
         try {
             message.textContent = "Creating your account...";
 
-            const response = await fetch("http://localhost:3000/api/auth/signup", {
+            const response = await fetch("https://nike-umali-api.onrender.com/api/auth/signup", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -87,7 +87,7 @@ if (loginForm) {
         try {
             message.textContent = "Logging in...";
 
-            const response = await fetch("http://localhost:3000/api/auth/login", {
+            const response = await fetch("https://nike-umali-api.onrender.com/api/auth/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -238,7 +238,7 @@ if (verificationEmail) {
         try {
             message.textContent = "Verifying your email...";
 
-            const response = await fetch("http://localhost:3000/api/auth/verify-email", {
+            const response = await fetch("https://nike-umali-api.onrender.com/api/auth/verify-email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -282,7 +282,7 @@ if (verificationEmail) {
             message.textContent = "Sending a new verification code...";
             resendButton.disabled = true;
 
-            const response = await fetch("http://localhost:3000/api/auth/resend-verification", {
+            const response = await fetch("https://nike-umali-api.onrender.com/api/auth/resend-verification", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
