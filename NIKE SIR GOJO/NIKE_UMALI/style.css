@@ -149,12 +149,12 @@ a {
 
 .home-shoe {
     position: absolute;
-    width: 110%;
-    height: 130%;
-    right: -20%;
-    top: -20%;
+    width: 100%;
+    height: 100%;
+    right: -15%;
+    top: -10%;
     object-fit: contain;
-    transform: rotate(-12deg);
+    transform: rotate(-5deg);
     mix-blend-mode: multiply;
     opacity: 0.92;
     z-index: 1;
