@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | NIKE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="checkout-page">
+
+    <header class="navbar dashboard-navbar">
+        <a href="cart.html" class="logo">
+            <span>NIKE</span>
+        </a>
+        <a href="cart.html">BACK TO CART</a>
+    </header>
+
+    <main class="checkout-container">
+        <h1>CHECKOUT</h1>
+
+        <form id="checkoutForm">
+
+            <section class="checkout-section delivery-section">
+                <h2>DELIVERY INFORMATION</h2>
+
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required>
+
+                <label for="street">House Number / Street</label>
+                <input type="text" id="street" required>
+
+                <label for="barangay">Barangay</label>
+                <input type="text" id="barangay" required>
+
+                <label for="city">City / Municipality</label>
+                <input type="text" id="city" required>
+
+                <label for="province">Province</label>
+                <input type="text" id="province" required>
+
+                <label for="zip">ZIP Code</label>
+                <input type="text" id="zip" required>
+            </section>
+
+            <section class="checkout-section payment-section">
+                <h2>PAYMENT METHOD</h2>
+                <p>Cash on Delivery (COD)</p>
+            </section>
+
+            <section class="checkout-section summary-section">
+                <h2>ORDER SUMMARY</h2>
+                <div id="checkoutItems"></div>
+                <p>Subtotal: <span id="checkoutSubtotal">₱0</span></p>
+                <p>Shipping Fee: <span id="shippingFee">₱0</span></p>
+                <h3>Total: <span id="checkoutTotal">₱0</span></h3>
+            </section>
+
+            <button type="submit" id="placeOrderBtn">PLACE ORDER</button>
+
+        </form>
+    </main>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

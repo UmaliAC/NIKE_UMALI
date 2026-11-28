@@ -74,6 +74,11 @@ if (signupForm) {
 
 /* LOGIN */
 
+const API_URL = window.location.hostname === "localhost" ||
+                window.location.hostname === "127.0.0.1"
+    ? "http://localhost:3000"
+    : "https://nike-umali-api.onrender.com";
+
 const loginForm = document.getElementById("loginForm");
 
 if (loginForm) {
@@ -87,7 +92,7 @@ if (loginForm) {
         try {
             message.textContent = "Logging in...";
 
-            const response = await fetch("https://nike-umali-api.onrender.com/api/auth/login", {
+            const response = await fetch("${API_URL}/api/auth/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
